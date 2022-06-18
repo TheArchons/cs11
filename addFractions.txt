@@ -1,0 +1,33 @@
+Take 1 line of input, and split it with commas, and set it to ins, while also printing "enter two fractions ".
+
+If the second and fourth values of ins are equal, 
+    print the sum of the first and third values. 
+    Then, print "--", 
+    and finally print the second value
+
+If the previous line is False, (else)
+    print the sum of the first value multiplied by the fourth value, and the third value multiplied by the second value.
+    Then, print "--",
+    Finally, print the second value multiplied by the fourth value
+
+Method 2:
+
+Alternatively, we can use the Fraction, from the fractions module, to do this.
+First, import the Fraction module from fractions (from fractions import Fraction)
+
+Take 1 line of input, and split it with commas, and set it to ins, while also printing "enter two fractions ".
+
+If the second and fourth values of ins are equal, 
+    print the sum of the first and third values. 
+    Then, print "--", 
+    and finally print the second value
+    This is to prevent automated simplification of the fractions if the denominators are the same
+
+If the previous line is false, (else)
+    convert all values in ins into integers, 
+    and then convert those values into Fractions.
+    Assign the converted values to the variables fraction1 and fraction2.
+    Then, assign the sum of fraction1 and fraction2 to the variable sum.
+    Then, print the numerator of the sum variable (sum.numerator)
+    Then, print "--",
+    Finally, print the denominator of the sum variable (sum.denominator)

@@ -1,0 +1,21 @@
+2.	Write pseudocode for a program that…
+a.	Asks the user how many students they have.
+b.	Allows the user to enter a student’s name, and 3 of their grades as percentages.
+c.	It calculates the average grade for each student.
+d.	Outputs the student’s name and average grade for the student with the highest mark in the class.
+
+first, ask for the user to input the number of students
+define a list called students. This will store lists of each student and their grades
+then, ask for the user to input the name of the student and 3 of their grades as percentages, separated with a comma.
+Split the input into a list, convert the last 3 values into integers, and add the list to the list students
+
+define a variable called highestGrade and set it to 0
+define a variable called highestStudent and set it to ""
+
+loop through the list students, setting each value in the list to a variable called student
+    save the sum of the 3 grades divided by 3 to a variable called averageGrade
+    if averageGrade is greater than highestGrade, set highestGrade to averageGrade and set highestStudent to student
+    print the name of the student plus ": ", and their average grade
+
+if the highestStudent variable is not empty, print the name of the student with the highest grade, "has the highest grade of", and the highestGrade
+else, print "No student has a higher grade than 0%"
