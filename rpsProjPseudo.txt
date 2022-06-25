@@ -1,0 +1,18 @@
+In my actual code, I decided to decide the computer's pick in the function, but I will assume the computer's choice is passed into the function here. I will also assume the result is printed outside of the function, unlike my python code
+
+Create a function called determineWinner, which takes in two parameters: the computer's choice and the player's choice.
+
+When tie is returned, it means the game is a tie.
+If computer is returned, it means the computer won.
+If player is returned, it means the player won.
+
+If the computer's choice is equal to the player's choice, return "tie"
+If the player's choice is equal to "rock",
+    If the computer's choice is "paper", return "tie"
+    else, return "computer"
+If the player's choice is equal to "paper",
+    If the computer's choice is "scissors", return "computer"
+    else, return "player"
+If the player's choice is equal to "scissors",
+    If the computer's choice is "rock", return "computer"
+    else, return "player"
